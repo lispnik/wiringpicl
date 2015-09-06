@@ -41,16 +41,16 @@
 (defcallback sum :int ((a :int) (b :int))
   (+ a b))
 
-(def-isr :pin 1 :mode 12 #'(lambda () (print "got a thig")))
+;; (def-isr :pin 1 :mode 12 #'(lambda () (print "got a thig")))
 ;; extern int      (int pin, int mS) ;
 ;; extern int  wiringPiISR         (int pin, int mode, void (*function)(void)) ;
 
 ;; http://wiringpi.com/reference/timing/
 
-extern void         delay             (unsigned int howLong) ;
-extern void         delayMicroseconds (unsigned int howLong) ;
-extern unsigned int millis            (void) ;
-extern unsigned int micros            (void) ;
+;; extern void         delay             (unsigned int howLong) ;
+;; extern void         delayMicroseconds (unsigned int howLong) ;
+;; extern unsigned int millis            (void) ;
+;; extern unsigned int micros            (void) ;
 
 ;; http://wiringpi.com/reference/spi-library/
 

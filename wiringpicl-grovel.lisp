@@ -1,6 +1,8 @@
 (in-package #:wiringpicl-grovel)
 
-(include "/usr/local/include/wiringPi.h")
+(cc-flags "-I/usr/local/include" "-I/usr/include")
+
+(include "wiringPi.h")
 
 (constant (WPI_MODE_PINS "WPI_MODE_PINS"))
 (constant (WPI_MODE_GPIO "WPI_MODE_GPIO"))
@@ -52,5 +54,4 @@
 (constant (PI_MAKER_QISDA "PI_MAKER_QISDA"))
 (constant (PI_MAKER_MBEST "PI_MAKER_MBEST"))
 
-
-(include "/usr/local/include/wiringPiSPI.h")
+(include "wiringPiSPI.h")
